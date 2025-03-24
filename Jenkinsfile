@@ -47,6 +47,9 @@ pipeline {
                     reuseNode true
                 }
             }
+            environment {
+                HOME ='.'
+            }
             steps {
                 sh '''
                     npm install netlify-cli
