@@ -8,6 +8,9 @@ pipeline {
                     image 'node:18-alpine'
                     reuseNode true
                 }
+            environment {
+                HOME ='.'
+            }
             }
             steps {
                 sh '''
